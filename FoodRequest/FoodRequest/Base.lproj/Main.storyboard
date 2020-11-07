@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HSb-ff-Nnc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Меню-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodRequest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Меню" image="doc.plaintext.fill" catalog="system" id="sSi-rn-Fcr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="-63"/>
+        </scene>
+        <!--Расписание-->
+        <scene sceneID="ms4-7n-LPG">
+            <objects>
+                <viewController id="QU1-c0-g3z" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uzc-ow-EEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RIF-AA-0k3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Расписание" image="list.bullet.rectangle" catalog="system" id="xuV-3n-49k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aB7-uf-Lc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="748"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="qVn-j9-j5g">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="hxa-IK-Vqe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="eM5-Vf-xZd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HBb-WB-bl0">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gQV-9W-qLR">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="dCp-sk-sb2" kind="relationship" relationship="rootViewController" id="5aW-JD-eJz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3i-mi-qKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-788" y="1532"/>
+        </scene>
+        <!--Пользователь-->
+        <scene sceneID="33y-Qg-w5o">
+            <objects>
+                <viewController id="dCp-sk-sb2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wc1-bh-jop">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="clC-ef-6Dw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Пользователь" image="person.crop.circle" catalog="system" id="fz8-Xr-lgW"/>
+                    <navigationItem key="navigationItem" id="87f-kY-bFm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kI8-Sh-UoY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="1533"/>
+        </scene>
+        <!--Заявка-->
+        <scene sceneID="UzZ-tb-KW7">
+            <objects>
+                <viewController id="mW5-02-OMK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qNb-pd-6fD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="roE-3q-jKO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Заявка" image="doc.fill" catalog="system" id="Q3r-nG-Nzi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acl-Rr-wD2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="-837"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xfv-1W-cQB">
+            <objects>
+                <tabBarController id="HSb-ff-Nnc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fmt-CA-nau">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mW5-02-OMK" kind="relationship" relationship="viewControllers" id="QvR-K8-8MI"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kUs-AZ-FPF"/>
+                        <segue destination="QU1-c0-g3z" kind="relationship" relationship="viewControllers" id="bwU-3h-Bc9"/>
+                        <segue destination="hxa-IK-Vqe" kind="relationship" relationship="viewControllers" id="dvi-Vt-aQc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIn-Cj-OAe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787" y="-63"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
+        <image name="doc.plaintext.fill" catalog="system" width="115" height="128"/>
+        <image name="list.bullet.rectangle" catalog="system" width="128" height="93"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
