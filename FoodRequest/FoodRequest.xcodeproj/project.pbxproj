@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C359582200EF918D9716767 /* Pods_FoodRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CB241C594553C734BD5531 /* Pods_FoodRequest.framework */; };
+		FA26DC782557F2290085D5D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA26DC772557F2290085D5D8 /* GoogleService-Info.plist */; };
 		FAEC36F82557514800D71E84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC36F72557514800D71E84 /* AppDelegate.swift */; };
 		FAEC36FA2557514800D71E84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC36F92557514800D71E84 /* SceneDelegate.swift */; };
 		FAEC36FC2557514800D71E84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC36FB2557514800D71E84 /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20B0FB582B56859DD10A080D /* Pods-FoodRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodRequest.debug.xcconfig"; path = "Target Support Files/Pods-FoodRequest/Pods-FoodRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		31280760D5975FBA3032FB50 /* Pods-FoodRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodRequest.release.xcconfig"; path = "Target Support Files/Pods-FoodRequest/Pods-FoodRequest.release.xcconfig"; sourceTree = "<group>"; };
+		60CB241C594553C734BD5531 /* Pods_FoodRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA26DC772557F2290085D5D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAEC36F42557514800D71E84 /* FoodRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEC36F72557514800D71E84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEC36F92557514800D71E84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C359582200EF918D9716767 /* Pods_FoodRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB7853DD6EAC066FC8BFFE5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60CB241C594553C734BD5531 /* Pods_FoodRequest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F63177665F6E23A5EE49B84C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20B0FB582B56859DD10A080D /* Pods-FoodRequest.debug.xcconfig */,
+				31280760D5975FBA3032FB50 /* Pods-FoodRequest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FAEC36EB2557514800D71E84 = {
 			isa = PBXGroup;
 			children = (
 				FAEC36F62557514800D71E84 /* FoodRequest */,
 				FAEC36F52557514800D71E84 /* Products */,
+				F63177665F6E23A5EE49B84C /* Pods */,
+				BB7853DD6EAC066FC8BFFE5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				FAEC36FD2557514800D71E84 /* Main.storyboard */,
 				FAEC37002557514900D71E84 /* Assets.xcassets */,
 				FAEC37022557514900D71E84 /* LaunchScreen.storyboard */,
+				FA26DC772557F2290085D5D8 /* GoogleService-Info.plist */,
 				FAEC37052557514900D71E84 /* Info.plist */,
 			);
 			path = FoodRequest;
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAEC37082557514900D71E84 /* Build configuration list for PBXNativeTarget "FoodRequest" */;
 			buildPhases = (
+				95EC1F1205F38BAF68D21D1C /* [CP] Check Pods Manifest.lock */,
 				FAEC36F02557514800D71E84 /* Sources */,
 				FAEC36F12557514800D71E84 /* Frameworks */,
 				FAEC36F22557514800D71E84 /* Resources */,
+				D2EE9C365F9BF4C64AD36F22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +154,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAEC37042557514900D71E84 /* LaunchScreen.storyboard in Resources */,
+				FA26DC782557F2290085D5D8 /* GoogleService-Info.plist in Resources */,
 				FAEC37012557514900D71E84 /* Assets.xcassets in Resources */,
 				FAEC36FF2557514800D71E84 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95EC1F1205F38BAF68D21D1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoodRequest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2EE9C365F9BF4C64AD36F22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodRequest/Pods-FoodRequest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodRequest/Pods-FoodRequest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodRequest/Pods-FoodRequest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAEC36F02557514800D71E84 /* Sources */ = {
@@ -283,6 +355,7 @@
 		};
 		FAEC37092557514900D71E84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20B0FB582B56859DD10A080D /* Pods-FoodRequest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		FAEC370A2557514900D71E84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31280760D5975FBA3032FB50 /* Pods-FoodRequest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
